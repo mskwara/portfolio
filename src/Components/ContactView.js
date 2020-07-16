@@ -4,10 +4,8 @@ import "./ContactView.scss";
 import ContactTile from "./ContactTile";
 
 const contactView = (props) => {
-    const scroll = () => {
-        document
-            .getElementById("welcomeView")
-            .scrollIntoView({ behavior: "smooth", block: "end" });
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     return (
@@ -17,7 +15,7 @@ const contactView = (props) => {
                 className="arrow"
                 src={require("../assets/back.svg")}
                 alt="Back"
-                onClick={scroll}
+                onClick={scrollToTop}
             />
         </div>
     );

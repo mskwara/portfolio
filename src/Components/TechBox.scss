@@ -3,6 +3,12 @@
 $width: 150px;
 $height: 150px;
 
+$width-small: 100px;
+$height-small: 100px;
+
+$width-very-small: 50px;
+$height-very-small: 50px;
+
 #techBox {
     width: $width;
     height: $height;
@@ -18,14 +24,31 @@ $height: 150px;
     transition: 0.7s;
     top: 0;
 
+    @media only screen and (max-width: 1400px) {
+        width: $width-small;
+        height: $height-small;
+    }
+
+    @media only screen and (max-height: 600px) {
+        width: $width-very-small;
+        height: $height-very-small;
+    }
+
     img {
         width: 100px;
+        @media only screen and (max-height: 600px) {
+            width: 50px;
+        }
     }
 
     .skillWrap {
         width: 100%;
         display: flex;
         justify-content: center;
+
+        @media only screen and (max-width: 1400px) {
+            display: none;
+        }
 
         .dot {
             width: 9px;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.scss";
 import Topbar from "./Components/Topbar";
 import WelcomeView from "./Components/WelcomeView";
@@ -6,8 +6,13 @@ import AboutView from "./Components/AboutView";
 import SkillsView from "./Components/SkillsView";
 import ProjectsView from "./Components/ProjectsView";
 import ContactView from "./Components/ContactView";
+import { ParallaxProvider } from "react-scroll-parallax";
 
-const app = (props) => {
+const App = (props) => {
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    });
+
     window.onscroll = function () {
         scrollFunction();
     };
@@ -57,19 +62,21 @@ const app = (props) => {
     }
 
     return (
-        <div id="App">
-            <Topbar className="transparent" />
-            <div>
-                <WelcomeView />
+        <ParallaxProvider>
+            <div id="App">
+                <Topbar className="transparent" />
+                <div>
+                    <WelcomeView />
+                </div>
+                <div>
+                    <AboutView />
+                </div>
+                <SkillsView />
+                <ProjectsView />
+                <ContactView />
             </div>
-            <div>
-                <AboutView />
-            </div>
-            <SkillsView />
-            <ProjectsView />
-            <ContactView />
-        </div>
+        </ParallaxProvider>
     );
 };
 
-export default app;
+export default App;

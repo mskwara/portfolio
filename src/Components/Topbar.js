@@ -8,6 +8,10 @@ const topbar = (props) => {
             .scrollIntoView({ behavior: "smooth", block: "end" });
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <div id="topbar">
             <div className="name">Michał Skwara</div>
@@ -15,7 +19,7 @@ const topbar = (props) => {
                 <p
                     id="nav-home"
                     className="nav-dynamic-link active"
-                    onClick={scroll.bind(this, "welcomeView")}
+                    onClick={scrollToTop}
                 >
                     Home
                 </p>
