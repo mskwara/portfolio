@@ -1,0 +1,53 @@
+#project {
+    width: 400px;
+    height: 350px;
+    margin: 30px;
+    background-color: rgba($color: #ffffff, $alpha: 0.7);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    transition: 0.7s;
+    top: 0;
+    cursor: pointer;
+
+    &:hover {
+        top: -10px;
+        transition: 0.7s;
+    }
+
+    .title {
+        font-size: 25pt;
+        text-transform: uppercase;
+        font-family: Sui Generis;
+        margin: 15px;
+    }
+
+    .divider {
+        width: 80%;
+        border-bottom: 1px solid gray;
+        margin: 0 auto;
+    }
+
+    .description {
+        margin: 20px;
+    }
+
+    .imagesWrap {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+
+        .techImage {
+            width: 60px;
+            margin: 0 20px;
+        }
+    }
+
+    .buttonCheck {
+        position: absolute;
+        bottom: 20px;
+    }
+}

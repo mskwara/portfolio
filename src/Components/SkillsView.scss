@@ -1,0 +1,23 @@
+#skillsView {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/background2.svg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .techBoxes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .buttonProjects {
+        margin-bottom: 20px;
+    }
+}
