@@ -27,7 +27,7 @@ const technologies = [
     {
         name: "HTML",
         image: "html.png",
-        skill: 2,
+        skill: 3,
     },
     {
         name: "CSS",
@@ -52,7 +52,7 @@ const technologies = [
     {
         name: "Adobe After Effects",
         image: "ae.png",
-        skill: 4,
+        skill: 5,
     },
 ];
 
