@@ -12,7 +12,7 @@ const technologies = [
     {
         name: "React",
         image: "react.png",
-        skill: 2,
+        skill: 3,
     },
     {
         name: "Node.js",

@@ -1,5 +1,12 @@
 const projects = [
     {
+        title: "Play2gether",
+        techUsedImages: ["react.png", "nodejs.png", "mongo.png"],
+        description:
+            "A platform that allows you to find people willing to play together.",
+        link: "https://play2gether-project.herokuapp.com",
+    },
+    {
         title: "Taste it!",
         techUsedImages: ["vue.svg", "nodejs.png", "mongo.png"],
         description:
